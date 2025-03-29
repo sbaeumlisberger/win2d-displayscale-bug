@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Win2DBug.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win2DBug"
+    xmlns:win2d="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Win2DBug">
+
+    <Grid Width="749,1428833007812" Height="710,2857055664062" Background="Black">
+        <TextBlock Foreground="White" Text="Win2DBug (Display scale must be 175%)"/>
+        <win2d:CanvasControl x:Name="canvas" CreateResources="Canvas_CreateResources" Draw="Canvas_Draw"/>
+    </Grid>
+</Window>
